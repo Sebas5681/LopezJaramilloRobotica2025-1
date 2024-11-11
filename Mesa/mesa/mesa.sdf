@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="mesa">
+    <static>true</static>
+    <link name="table_link">
+      
+      <!-- Superficie de la mesa -->
+      <visual name="table_top">
+        <geometry>
+          <box>
+            <!-- Ajustar dimensiones: Largo x Ancho x Grosor -->
+            <size>1.5 0.8 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.6 0.4 0.2 1</ambient>
+          <diffuse>0.6 0.4 0.2 1</diffuse>
+        </material>
+        <!-- Ajustar la altura de la superficie de la mesa -->
+        <pose>0 0 0.85 0 0 0</pose>
+      </visual>
+      
+      <!-- Pata 1 -->
+      <visual name="leg1">
+        <geometry>
+          <box>
+            <!-- Ajustar grosor y altura de las patas -->
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <pose>-0.7 -0.35 0.4 0 0 0</pose> <!-- Ajustar posición relativa -->
+      </visual>
+      
+      <!-- Pata 2 -->
+      <visual name="leg2">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <pose>0.7 -0.35 0.4 0 0 0</pose>
+      </visual>
+      
+      <!-- Pata 3 -->
+      <visual name="leg3">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <pose>-0.7 0.35 0.4 0 0 0</pose>
+      </visual>
+      
+      <!-- Pata 4 -->
+      <visual name="leg4">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <pose>0.7 0.35 0.4 0 0 0</pose>
+      </visual>
+      
+    </link>
+  </model>
+</sdf>
